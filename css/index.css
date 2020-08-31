@@ -1,0 +1,28 @@
+/*Reset
+* {margin: 0; padding: 0;font-family: 'Open Sans', sans-serif;}
+
+body {
+    width: 100%;
+}
+/*Cabeçalho*/
+.cabecalho {
+    margin:10px 250px;
+    
+}
+
+.logo {
+    margin-top:10px;
+    float:left;
+}
+.logo img {
+    height: 100px;
+}
+
+.menu {
+    float: right;
+    text-align: center;
+}
+.menu ul li {display: inline;}
+*/
+*{margin:0; padding:0;}
+.conteiner{margin: 0 auto; background: #ccc;}
