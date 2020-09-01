@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="css/index.css" />
 
     <script>
-        function navegation(paginaNumber){
-            
-            var pagina = document.getElementById("page-"+paginaNumber);
+        function navegation(paginaNumber) {
 
-            for(var i = 1; i <=6; i++){
-                document.getElementById("page-"+i).style.display = 'none';
+            var pagina = document.getElementById("page-" + paginaNumber);
+
+            for (var i = 1; i <= 6; i++) {
+                document.getElementById("page-" + i).style.display = 'none';
             }
 
             pagina.style.display = 'block';
@@ -21,12 +21,13 @@
         }
     </script>
 </head>
+
 <body>
     <header>
-        <div class="conteiner" >
+        <div class="container">
             <div class="topo">
                 <div class="topo-img">
-                    <img src="img/parnaso.png">
+                    <img src="img/parnaso-logo.png">
                 </div>
                 <div class="topo-menu">
                     <ul>
@@ -41,7 +42,7 @@
             </div>
         </div>
     </header>
-    <div class="conteiner" >
+    <div class="container">
         <div id="page-1" class="conteudo">
             PRINCIPAL
         </div>
@@ -55,35 +56,68 @@
             Trilhas
         </div>
         <div id="page-5" class="conteudo" style="display: none;">
-           <h1>Como chegar</h1>
-           <p>Av. Rotariana , Teresópolis-RJ
 
-            S/n. - Cep. 25960-602
-        
-            Teresópolis-RJ</p>
+            <div class="como-chegar">
+                <div class="como-chegar-endereco">
+                    <div class="titulo">
+                        <h1>Como chegar</h1>
+                    </div>
+
+
+                    <p>Av. Rotariana , Teresópolis-RJ<br>
+                        S/n. - Cep. 25960-602<br>
+                        Teresópolis-RJ</p><br>
+                </div>
+
+
+                <div class="como-chegar-texto">
+                    <h2>Como chegar:</h2>
+                    <p>A entrada principal do Parque Nacional da Serra dos Órgãos fica na área urbana de Teresópolis, na
+                        Avenida
+                        Rotariana s/nº (que interliga a BR 116 Rio-Bahia, na altura do km 89,5 à cidade), com acesso bem
+                        sinalizado. A entrada do parque fica ao lado da ponte sobre o Rio Paquequer, na entrada da
+                        cidade,
+                        próximo ao Mirante do Soberbo e ao Portal da Cidade.</p><br>
+
+                    <p>Na BR 116, sentido Rio-Teresópolis, na altura de Magé, existe a praça do pedágio administrado
+                        pela
+                        CRT,
+                        com cobrança bidirecional. Há cobrança de pedágio também no sentido
+                        Teresópolis-Magé-Teresópolis.
+                    </p>
+                </div>
+                <div class="como-chegar-mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29501.770679204164!2d-42.980919!3d-22.439512!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99b2fc4e7ae71d%3A0xa560f33c6b47710e!2sParque%20Nacional%20da%20Serra%20dos%20%C3%93rg%C3%A3os%20-%20PARNASO%20-%20Sede%20Teres%C3%B3polis!5e0!3m2!1spt-BR!2sbr!4v1598932106766!5m2!1spt-BR!2sbr"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+
         </div>
         <div id="page-6" class="conteudo" style="display: none;">
             Contato
         </div>
     </div>
     <footer>
-        <div class="conteiner">
+        <div class="container">
             <div class="footer-div">
                 <hr>
                 <div class="footer-logo">
-                    <a href="index.html"><img src="img/parnaso.png" alt="Logo Parnaso"></a>
+                    <a href="index.html"><img src="img/parnaso-logo.png" alt="Logo Parnaso"></a>
                 </div>
-                
+
                 <div class="footer-menu">
                     <ul>
                         <li><a href="https://www.ana.gov.br/"><img src="img/logo-ana.png"></a></li>
                         <li><a href="https://www.gov.br/ibama"><img src="img/logo-ibama.png"></a></li>
                         <li><a href="http://www.florestal.gov.br/"><img src="img/logo-sfb.png"></a></li>
-                        <li><a href="http://www.jbrj.gov.br/"><img src="img/logo-jbrj.jpg"></a></li>     
+                        <li><a href="http://www.jbrj.gov.br/"><img src="img/logo-jbrj.jpg"></a></li>
                     </ul>
                 </div>
-           </div>
+            </div>
         </div>
     </footer>
 </body>
+
 </html>
