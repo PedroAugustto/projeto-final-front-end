@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalho</title>
+    <link rel="stylesheet" href="css/index.css" />
+
+    <script>
+        function navegation(paginaNumber){
+            
+            var pagina = document.getElementById("page-"+paginaNumber);
+
+            for(var i = 1; i <=6; i++){
+                document.getElementById("page-"+i).style.display = 'none';
+            }
+
+            pagina.style.display = 'block';
+
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="conteiner" >
+            <div class="topo">
+                <div class="topo-img">
+                    <img src="img/parnaso.png">
+                </div>
+                <div class="topo-menu">
+                    <ul>
+                        <li><a onclick="navegation(1)">Inicio</a></li>
+                        <li><a onclick="navegation(2)">Sobre</a></li>
+                        <li><a onclick="navegation(3)">Atrativos naturais</a></li>
+                        <li><a onclick="navegation(4)">Trilhas</a></li>
+                        <li><a onclick="navegation(5)">Como chegar</a></li>
+                        <li><a onclick="navegation(6)">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="conteiner" >
+        <div id="page-1" class="conteudo">
+            PRINCIPAL
+        </div>
+        <div id="page-2" class="conteudo" style="display: none;">
+            SOBRE
+        </div>
+        <div id="page-3" class="conteudo" style="display: none;">
+            Atrativos naturais
+        </div>
+        <div id="page-4" class="conteudo" style="display: none;">
+            Trilhas
+        </div>
+        <div id="page-5" class="conteudo" style="display: none;">
+           
+            Como chegar
+        </div>
+        <div id="page-6" class="conteudo" style="display: none;">
+            Contato
+        </div>
+    </div>
+    <footer>
+        <div class="conteiner">
+            <div class="footer-div">
+                <div class="footer-logo">
+                    <a href="index.html"><img src="img/parnaso.png" alt="Logo Parnaso"></a>
+                </div>
+                <hr>
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="https://www.ana.gov.br/"><img src="img/logo-ana.png"></a></li>
+                        <li><a href="https://www.gov.br/ibama"><img src="img/logo-ibama.png"></a></li>
+                        <li><a href="http://www.florestal.gov.br/"><img src="img/logo-sfb.png"></a></li>
+                        <li><a href="http://www.jbrj.gov.br/"><img src="img/logo-jbrj.jpg"></a></li>     
+                    </ul>
+                </div>
+           </div>
+        </div>
+    </footer>
+</body>
+</html>
