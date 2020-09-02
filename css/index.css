@@ -36,10 +36,15 @@ hr{border:1px solid #ccc;}
 
 .botao{width:400px;  margin:10px auto; position:relative; display: block;}
 
-@media only screen and (max-width: 600px) {
-   
-}
+/*Trilhas*/
+.trilhas{padding-top:20px;}
+.trilhas-nome {margin: 10px;}
+.trilhas-lista {margin: 60px;}
+.trilhas-texto {margin: 45px;}
+.mapa {text-align: center; padding-top: 20px;}
+.trilhas-titulo {text-align: center;}
 
+.contato{padding:20px 0;}
 .footer-menu {width:600px; margin: 0 auto;}
 .footer-menu ul li{list-style-type: none;}
 .footer-menu ul li a{list-style-type: none; height: 100px;}
