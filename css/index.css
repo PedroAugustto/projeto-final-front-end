@@ -11,18 +11,34 @@ hr{border:1px solid #ccc;}
 }
 .topo-menu ul li a:hover{background-color: #fafafa; border-bottom: 2px solid greenyellow;}
 
-.conteudo{min-height: 330px;}
+.conteudo{min-height: 330px; background:#fafafa;}
 
 /*Como Chegar*/
-.como-chegar {background-color: #ffffffd8;padding-top:20px;}
+.como-chegar {background-color: #fafafa; padding-top:20px; }
 .como-chegar-endereco {text-align: left;border-left: 5px solid green;padding: 5px ;border-radius: 10px;}
 .como-chegar-texto {margin: 30px;}
 .como-chegar-mapa {text-align: center; padding: 30px; }
 .como-chegar-mapa iframe{width: 100%; height: 400px;}
 
+/*Atrativos*/
+.atrativos {background-color: #fafafa; padding-top:20px;}
+.atrativos-lista {text-align: left;border-left: 5px solid green; padding: 5px ;border-radius: 10px; margin-top:30px;}
+.atrativos-texto {margin: 30px;}
+.atrativos-texto p{text-indent: 15px;}
+
+/* Carrocel */
+.carousel {width: 100%; max-height:400px; overflow: hidden;}
+.item img {width: 100%;}
+
 .footer-color{background:#fafafa;}
 .footer-div{border-top: 2px solid green;}
 .footer-div img{max-width:300px; margin-top:30px; }
+
+.botao{width:400px;  margin:10px auto; position:relative; display: block;}
+
+@media only screen and (max-width: 600px) {
+   
+}
 
 .footer-menu {width:600px; margin: 0 auto;}
 .footer-menu ul li{list-style-type: none;}

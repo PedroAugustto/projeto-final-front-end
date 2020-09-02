@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-md-8 topo-menu">
                     <ul class="nav nav-pills">
-                        <li role="presentation" class=" active"><a onclick="navegation(1)">Inicio</a></li>
+                        <li role="presentation"><a onclick="navegation(1)">Inicio</a></li>
                         <li role="presentation"><a title="Sobre" onclick="navegation(2)">Sobre</a></li>
                         <li role="presentation"><a title="Atrativos naturais " onclick="navegation(3)">A. naturais</a></li>
                         <li role="presentation"><a title="Trilhas" onclick="navegation(4)">Trilhas</a></li>
@@ -39,13 +39,124 @@
             </div>
         </div>
         <div id="page-2" class="row conteudo" style="display: none;">
-            <div class="col-md-10">
-               SOBRE  
+            <div class="col-md-12" style="       padding:0;         ">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+                    
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img/Bromlias-570x408.jpg" alt="Bromélia">
+                        </div>
+                    
+                        <div class="item">
+                            <img src="img/Serra.dos.Órgãos.National.Park.640.12031.jpg" alt="Parque Nacional Serra dos Órgãos">
+                        </div>
+                        
+                        <div class="item">
+                            <img src="img/pedra-do-sino-2.jpg" alt="Pedra do Sino">
+                        </div>
+                        <div class="item">
+                            <img src="img/parnaso.jpg" alt="cachoeira" >
+                            </div>
+                        </div>
+                    
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                </div> 
+
+                <!--modal inicio -->
+                <button type="button" class="btn btn-info btn-lg botao" data-toggle="modal" data-target="#myModal">Sobre</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog">
+                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Sobre</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p class="text-justify"> O Parque Nacional da Serra dos Órgãos é uma Unidade de Conservação Federal de Proteção Integral, subordinada ao 
+                          Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio), cujo objetivo maior é o de preservar amostras 
+                          representativas dos ecossistemas nacionais.
+                          <br>
+                          O ICMBio é uma autarquia do Ministério do Meio Ambiente criada em 2007 para gerenciar as unidades de conservação 
+                          federais e projetos de conservação da biodiversidade, como o TAMAR e o Projeto Peixe Boi, assumindo atribuições 
+                          antes vinculadas ao IBAMA
+                          <br>
+                          Criado em 30 de novembro de 1939, o PARNASO é o terceiro parque mais antigo do país, representando um importante 
+                          marco na história das Unidades de Conservação Brasileiras.</p>
+                      </div>
+                  
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <!--modal fim -->
             </div>
         </div>
         <div id="page-3" class="row conteudo" style="display: none;">
             <div class="col-md-12">
-               Atrativos naturais 
+                <div class="atrativos-lista">
+                    <div class="titulo">
+                        <h1>Atrativos</h1>       
+                    </div>
+
+                    <ul>
+                        <li>Centro de visitantes</li>
+                        <li>Piscina de águas naturais</li>
+                        <li>Área de lazer</li>
+                        <li>Bosques Santa Helena e da Colina</li>
+                    </ul>
+                </div>
+
+                <div class="atrativos-texto">
+                    <h2>Atrativos Principais:</h2><br>
+
+                    <h3>Centro de visitantes:</h3>
+                    <p>Entre as atrações estão a maquete com animação e áudio explicando as características do Parque 
+                    e destacando os principais pontos, reproduções de animais e computadores com apresentação multimídia 
+                    e jogos temáticos.
+                        Na sala interativa é possível ouvir os cantos de aves e vocalizações de mamíferos ou aprimorar a 
+                    capacidade de ver os animais na floresta.
+                        O Centro de Visitantes conta, ainda, com cafeteria e loja de lembranças, com camisetas bordadas, 
+                    livros, suprimentos para passeios no Parque e outras lembranças.</p><br>
+
+                    <h3>Piscina de águas naturais:</h3>
+                    <p>A Piscina de águas naturais é uma das mais tradicionais atrações do PARNASO. Muito procurada no 
+                    verão, ela compõe um belo cenário para piqueniques e atividades recreativas no frio inverno da 
+                    serra.</p><br>
+
+                    <h3>Área de lazer</h3>
+                    <p>A área de lazer para os visitantes na parte baixa da Sede Teresópolis é toda sinalizada e possui 
+                    estacionamento. A 100 metros da portaria o rio Paquequer proporciona um gostoso banho de cachoeira, 
+                    um pouco acima está a piscina de pedra.</p><br>
+
+                    <h3>Bosques Santa Helena e da Colina</h3>
+                    <p>A trilha do Caxinguelê, cortada pelo Rio Paquequer, é um passeio leve e agradável, onde o 
+                    visitante entra em contato com a natureza. Quem passa o dia no Parque não pode deixar de conhecer 
+                    os bosques Santa Helena e da Colina, projetados pelo arquiteto e paisagista Ângelo Murgel, com 
+                    refúgios, muita sombra, mesas e bancos de pedra para piquenique e banheiros.</p><br>
+               </div>
             </div>
         </div>
         <div id="page-4" class="row conteudo" style="display: none;">
@@ -58,7 +169,7 @@
                 <div >
                     <div class="como-chegar-endereco">
                         <div class="titulo">
-                            <h1>Como chegar</h1>
+                            <h1>Endereço :</h1>
                         </div>
     
     
@@ -118,23 +229,6 @@
             </div>
         </div>
         </footer>
-        <!--
-        <footer>   
-            <div class="footer-div">
-                <div class="footer-logo">
-                    <a href="index.html"><img src="img/parnaso.png" alt="Logo Parnaso"></a>
-                </div>
-                <hr>
-                
-                    <ul>
-                        <li><a href="https://www.ana.gov.br/"><img src="img/logo-ana.png"></a></li>
-                        <li><a href="https://www.gov.br/ibama"><img src="img/logo-ibama.png"></a></li>
-                        <li><a href="http://www.florestal.gov.br/"><img src="img/logo-sfb.png"></a></li>
-                        <li><a href="http://www.jbrj.gov.br/"><img src="img/logo-jbrj.jpg"></a></li>     
-                    </ul>
-                </div>
-           </div>  
-        </footer> -->
     </div>
        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" ></script>
