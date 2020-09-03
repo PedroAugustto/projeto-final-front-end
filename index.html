@@ -7,129 +7,265 @@
     <title>Trabalho</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/index.css" />
+    <!-- <link rel="stylesheet" href="css/home.css" /> -->
     <script src="js/js.js"></script>
 </head>
+
 <body>
-    <div class="container" >
+    <div class="container">
         <div class="row topo">
             <header>
                 <div class=" col-sm-12 col-md-4 topo-img">
                     <div id="row">
                         <div class=" col-sm-12 col-md-6">
-                            <img src="img/parnaso-logo.png" class="center-block img-rounded img-responsive" alt="Imagem Logo">
-                        </div> 
+                            <img src="img/parnaso-logo.png" class="center-block img-rounded img-responsive"
+                                alt="Imagem Logo">
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-8 topo-menu">
                     <ul class="nav nav-pills">
                         <li role="presentation"><a onclick="navegation(1)">Inicio</a></li>
                         <li role="presentation"><a title="Sobre" onclick="navegation(2)">Sobre</a></li>
-                        <li role="presentation"><a title="Atrativos naturais " onclick="navegation(3)">A. naturais</a></li>
+                        <li role="presentation"><a title="Atrativos " onclick="navegation(3)">Atrativos</a></li>
                         <li role="presentation"><a title="Trilhas" onclick="navegation(4)">Trilhas</a></li>
                         <li role="presentation"><a title="Como Chegar" onclick="navegation(5)">C. chegar</a></li>
                         <li role="presentation"><a title="Contato" onclick="navegation(6)">Contato</a></li>
                     </ul>
                 </div>
             </header>
-        </div> 
+        </div>
         <div id="page-1" class="row conteudo">
-            <div class="col-md-12">
-                PRINCIPAL
-            </div>
+                <!-- Início Slide página inicial -->
+                <div class="col-md-12">
+                    <div id="CarouselIndex" class="carousel slide" data-ride="carouselhome">
+                        <!-- Indicações -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#CarouselIndex" data-slide-to="0" class="active"></li>
+                            <li data-target="#CarouselIndex" data-slide-to="1"></li>
+                            <li data-target="#CarouselIndex" data-slide-to="2"></li>
+                            <li data-target="#CarouselIndex" data-slide-to="3"></li>
+                        </ol>
+
+                        <!-- Posição dos Slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/slide1.png" alt="Pico Dedo de Deus">
+                            </div>
+
+                            <div class="item">
+                                <img src="img/slide2.png" alt="Pico Pedra do Sino">
+                            </div>
+
+                            <div class="item">
+                                <img src="img/slide3.png" alt="Sede da PARNASO - Teresópolis">
+                            </div>
+                            <div class="item">
+                                <img src="img/slide4.png" alt="Capelinha da Serra">
+                            </div>
+                        </div>
+
+                        <!-- Controle dos Slides -->
+                        <a class="left carousel-control" href="#CarouselIndexl" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="right carousel-control" href="#CarouselIndex" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+
+
+                    </div>
+                    <!-- Fim Slide página inicial -->
+                    <br>
+                    <br>
+                    <!-- Início apresentação do Site -->
+                    <p>
+                        <h2 class="modal-title" align="center">Com mais de 20 mil hectares espalhados por quatro
+                            municípios do Estado
+                            do Rio de Janeiro, o PARNASO é um dos melhores locais do Brasil para trilhas, escaladas,
+                            piscinas naturais e banhos de cachoeira.
+                            Diversão e lazer para toda a família e para os amantes da aventura!</h2>
+                    </p>
+                    <!-- Fim apresentação do Site -->
+                    <br>
+                    <br>
+
+                    <!-- Início Chamada de páginas do site  -->
+                    <table width="200" border="0">
+                        <tbody>
+                            <tr>
+                                <td><a title="Sobre" onclick="navegation(2)"><img src="img/button01.png"
+                                            alt="Sobre a PARNASO"></a></td>
+                                <td><a title="Atrativos naturais " onclick="navegation(3)"><img src="img/button02.png"
+                                            alt="Atrativos do Parque"></a></td>
+                                <td><a title="Trilhas" onclick="navegation(4)"><img src="img/button03.png"
+                                            alt="Trilhas e Montanhismo"></a></td>
+                                <td><a title="Como Chegar" onclick="navegation(5)"><img src="img/button04.png"
+                                            alt="Localização da PARNASO"></a></td>
+                                <td><a title="Contato" onclick="navegation(6)"><img src="img/button05.png"
+                                            alt="Contato e Redes Sociais"></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Fim Chamada de páginas do site  -->
+
+                    <br>
+
+                    <!-- Início de Depoimentos  -->
+
+                    <p>
+                        <h3 class="modal-title" align="center">DEPOIMENTOS</h3>
+                    </p>
+
+                    <table width="1000" border="0" align="center">
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td>
+                                    <p>
+                                        <h4 class="modal-title">Silvia M</h4>
+                                    </p>
+                                    <p><strong>Vá ver as nuvens de pertinho...</strong></p>
+                                    <p class="text-justify">O parque atravessa as cidades de Petrópolis, Teresópolis e
+                                        Itaipava. Várias atrações. No mirante do Soberbo (sobre o rio Soberbo) você terá
+                                        a melhor vista do dedo de Deus.</p>
+                                </td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </td>
+                                <td>
+                                    <p>
+                                        <h4 class="modal-title">Alexandre A</h4>
+                                    </p>
+                                    <p class="text-justify"><strong>Maravilhoso!</strong></p>
+                                    <p>Um lugar lindo pra ir com toda a família. Acesso fácil para crianças e idosos. A
+                                        piscina natural gigante renova as nossas energias, e o passeio pela trilha
+                                        suspensa pode ser feito devagar para curtir o visual no passo do visitante. Da
+                                        até pra cadeirantes.</p>
+                                </td>
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </td>
+                                <td>
+                                    <p>
+                                        <h4 class="modal-title">Paulo C</h4>
+                                    </p>
+                                    <p><strong>Muito bom para caminhar!</strong></p>
+                                    <p class="text-justify">Ótimo lugar para contato com a natureza. Várias piscinas
+                                        naturais e pequenas quedas d'água. Para chegar na maior cachoeira, a Véu da
+                                        Noiva, exige-se um certo condicionamento físico, já que é mais distante da
+                                        entrada do parque. Mas o esforço vale a pena!!</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Fim de Depoimentos  -->
+                    <br>
+                    <br>
+
+                </div>
         </div>
         <div id="page-2" class="row conteudo" style="display: none;">
-            <div class="col-md-12" style="       padding:0;         ">
+            <div class="col-md-12" style="padding:0;">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
                         <li data-target="#myCarousel" data-slide-to="3"></li>
                         <li data-target="#myCarousel" data-slide-to="4"></li>
                         <li data-target="#myCarousel" data-slide-to="5"></li>
-                        </ol>
-                    
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
                         <div class="item active">
-                            <img class = "block-center img-rsponsive" src="img/parnaso-2.jpg" alt="Parnaso">
+                            <img class="block-center img-rsponsive" src="img/parnaso-2.jpg" alt="Parnaso">
                         </div>
-                        <div class = "item"> 
-                            <img src="img/sino.jpg" alt="Parnaso">
-                            </div>
-                        <div class = "item"> 
-                        <img src="img/cachoeira-2.jpg" alt="Cachoeira">
-                            </div>
                         <div class="item">
-                            <img src="img/Serra.dos.Órgãos.National.Park.640.12031.jpg" alt="Parque Nacional Serra dos Órgãos">
+                            <img src="img/sino.jpg" alt="Parnaso">
+                        </div>
+                        <div class="item">
+                            <img src="img/cachoeira-2.jpg" alt="Cachoeira">
+                        </div>
+                        <div class="item">
+                            <img src="img/Serra.dos.Órgãos.National.Park.640.12031.jpg"
+                                alt="Parque Nacional Serra dos Órgãos">
                         </div>
                         <div class="item">
                             <img src="img/pedra-do-sino-2.jpg" alt="Pedra do Sino">
                         </div>
-                        <div class = "item"> 
-                            <img src="img/parnaso-3.jpg" alt="Parnaso">
-                            </div>
                         <div class="item">
-                            <img src="img/noite-sino.jpg" alt="Pedra do Sino" >
-                            </div>
+                            <img src="img/parnaso-3.jpg" alt="Parnaso">
                         </div>
-                    
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <div class="item">
+                            <img src="img/noite-sino.jpg" alt="Pedra do Sino">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
                         <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right"></span>
                         <span class="sr-only">Next</span>
-                        </a>
-                </div> 
+                    </a>
+                </div>
 
                 <!--modal inicio -->
-                <button type="button" class="btn btn-info btn-lg botao" data-toggle="modal" data-target="#myModal">Sobre</button>
+                <button type="button" class="btn btn-info btn-lg botao" data-toggle="modal"
+                    data-target="#myModal">Sobre</button>
 
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" role="dialog">
-                  <div class="modal-dialog">
-                  
-                    <!-- Modal content-->
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Sobre</h4>
-                      </div>
-                      <div class="modal-body">
-                        <p class="text-justify"> O Parque Nacional da Serra dos Órgãos é uma Unidade de Conservação Federal de Proteção Integral, subordinada ao 
-                          Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio), cujo objetivo maior é o de preservar amostras 
-                          representativas dos ecossistemas nacionais.
-                          <br>
-                          O ICMBio é uma autarquia do Ministério do Meio Ambiente criada em 2007 para gerenciar as unidades de conservação 
-                          federais e projetos de conservação da biodiversidade, como o TAMAR e o Projeto Peixe Boi, assumindo atribuições 
-                          antes vinculadas ao IBAMA
-                          <br>
-                          Criado em 30 de novembro de 1939, o PARNASO é o terceiro parque mais antigo do país, representando um importante 
-                          marco na história das Unidades de Conservação Brasileiras.</p>
-                      </div>
-                  
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                      </div>
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Sobre</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-justify"> O Parque Nacional da Serra dos Órgãos é uma Unidade de
+                                    Conservação Federal de Proteção Integral, subordinada ao
+                                    Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio), cujo objetivo
+                                    maior é o de preservar amostras
+                                    representativas dos ecossistemas nacionais.
+                                    <br>
+                                    O ICMBio é uma autarquia do Ministério do Meio Ambiente criada em 2007 para
+                                    gerenciar as unidades de conservação
+                                    federais e projetos de conservação da biodiversidade, como o TAMAR e o Projeto Peixe
+                                    Boi, assumindo atribuições
+                                    antes vinculadas ao IBAMA
+                                    <br>
+                                    Criado em 30 de novembro de 1939, o PARNASO é o terceiro parque mais antigo do país,
+                                    representando um importante
+                                    marco na história das Unidades de Conservação Brasileiras.</p>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+
                     </div>
-                    
-                  </div>
                 </div>
                 <!--modal fim -->
             </div>
         </div>
         <div id="page-3" class="row conteudo" style="display: none;">
             <div class="col-md-12">
+                <div class="titulo">
+                    <h1>Atrativos</h1>
+                </div>
                 <div class="atrativos-lista">
-                    <div class="titulo">
-                        <h1>Atrativos</h1>       
-                    </div>
-
+                    <h3>Principais Atrativos</h3>
                     <ul>
                         <li>Centro de visitantes</li>
                         <li>Piscina de águas naturais</li>
@@ -139,44 +275,62 @@
                 </div>
 
                 <div class="atrativos-texto">
-                    <h2>Atrativos Principais:</h2><br>
+                    <h2 class="subtitulo">Atrativos Principais</h2><br>
 
                     <h3>Centro de visitantes:</h3>
-                    <p>Entre as atrações estão a maquete com animação e áudio explicando as características do Parque 
-                    e destacando os principais pontos, reproduções de animais e computadores com apresentação multimídia 
-                    e jogos temáticos.
-                        Na sala interativa é possível ouvir os cantos de aves e vocalizações de mamíferos ou aprimorar a 
-                    capacidade de ver os animais na floresta.
-                        O Centro de Visitantes conta, ainda, com cafeteria e loja de lembranças, com camisetas bordadas, 
-                    livros, suprimentos para passeios no Parque e outras lembranças.</p><br>
+                    <p>Entre as atrações estão a maquete com animação e áudio explicando as características do Parque
+                        e destacando os principais pontos, reproduções de animais e computadores com apresentação
+                        multimídia
+                        e jogos temáticos.
+                        Na sala interativa é possível ouvir os cantos de aves e vocalizações de mamíferos ou aprimorar a
+                        capacidade de ver os animais na floresta.
+                        O Centro de Visitantes conta, ainda, com cafeteria e loja de lembranças, com camisetas bordadas,
+                        livros, suprimentos para passeios no Parque e outras lembranças.</p><br>
 
                     <h3>Piscina de águas naturais:</h3>
-                    <p>A Piscina de águas naturais é uma das mais tradicionais atrações do PARNASO. Muito procurada no 
-                    verão, ela compõe um belo cenário para piqueniques e atividades recreativas no frio inverno da 
-                    serra.</p><br>
+                    <p>A Piscina de águas naturais é uma das mais tradicionais atrações do PARNASO. Muito procurada no
+                        verão, ela compõe um belo cenário para piqueniques e atividades recreativas no frio inverno da
+                        serra.</p><br>
 
                     <h3>Área de lazer</h3>
-                    <p>A área de lazer para os visitantes na parte baixa da Sede Teresópolis é toda sinalizada e possui 
-                    estacionamento. A 100 metros da portaria o rio Paquequer proporciona um gostoso banho de cachoeira, 
-                    um pouco acima está a piscina de pedra.</p><br>
+                    <p>A área de lazer para os visitantes na parte baixa da Sede Teresópolis é toda sinalizada e possui
+                        estacionamento. A 100 metros da portaria o rio Paquequer proporciona um gostoso banho de
+                        cachoeira,
+                        um pouco acima está a piscina de pedra.</p><br>
 
                     <h3>Bosques Santa Helena e da Colina</h3>
-                    <p>A trilha do Caxinguelê, cortada pelo Rio Paquequer, é um passeio leve e agradável, onde o 
-                    visitante entra em contato com a natureza. Quem passa o dia no Parque não pode deixar de conhecer 
-                    os bosques Santa Helena e da Colina, projetados pelo arquiteto e paisagista Ângelo Murgel, com 
-                    refúgios, muita sombra, mesas e bancos de pedra para piquenique e banheiros.</p><br>
-               </div>
+                    <p>A trilha do Caxinguelê, cortada pelo Rio Paquequer, é um passeio leve e agradável, onde o
+                        visitante entra em contato com a natureza. Quem passa o dia no Parque não pode deixar de
+                        conhecer
+                        os bosques Santa Helena e da Colina, projetados pelo arquiteto e paisagista Ângelo Murgel, com
+                        refúgios, muita sombra, mesas e bancos de pedra para piquenique e banheiros.</p><br>
+                </div>
             </div>
         </div>
         <div id="page-4" class="row conteudo" style="display: none;">
             <div class="col-md-12">
                 <div class="trilhas">
-                    <div class="trilhas-titulo">
+                    <div class="titulo">
                         <h1>Trilhas</h1>
                     </div>
-                    <div>
+                    <div class="atrativos-lista">
+                        <h3>Trilhas Principais</h3>
+                        <ul>
+                            <li><a href="#Estrada da Barragem">Estrada da Barragem</li></a>
+                            <li><a href="#Trilha Suspensa">Trilha Suspensa</li></a>
+                            <li><a href="#Trilha Primavera">Trilha Primavera</li></a>
+                            <li><a href="#Trilha Mozart Catão">Trilha Mozart Catão</li></a>
+                            <li><a href="#Trilha Cartão Postal">Trilha Cartão Postal</li></a>
+                            <li><a href="#Trilha da Pedra do Sino">Trilha da Pedra do Sino</li></a>
+                        </ul>
+                    </div>
+
+                    <div class="trilha">
                         <div class="trilhas-nome">
-                            <h2>Estrada da Barragem</h2>
+                            <h2 id="Estrada da Barragem" class="subtitulo">Estrada da Barragem</h2>
+                        </div>
+                        <div class="foto">
+                            <img src="img/barragem.jpg" />
                         </div>
                         <div class="trilhas-lista">
                             <ul>
@@ -195,10 +349,16 @@
                                 Teresópolis.</p>
                         </div>
                     </div>
-                    <div>
+
+                    <div class="trilha">
                         <div class="trilhas-nome">
-                            <h2>Trilha Suspensa</h2>
+                            <h2 id="Trilha Suspensa" class="subtitulo">Trilha Suspensa</h2>
                         </div>
+
+                        <div class="foto">
+                            <img src="img/trilha suspensa 2-150x202.jpg" />
+                        </div>
+
                         <div class="trilhas-lista">
                             <ul>
                                 <li>Nível de dificuldade: leve</li>
@@ -219,17 +379,23 @@
                                 da
                                 floresta e dos paredões do PARNASO.</p>
                             <p>Uma escada dá acesso a poços do rio Paquequer, ótima opção de banho em dias quentes.</p>
-                            <p>* Iniciando pela Praça da Barragem é possível caminhar até a escada que desce à esquerda
+                            <p>Iniciando pela Praça da Barragem é possível caminhar até a escada que desce à esquerda
                                 voltando para a Estrada da Barragem (mirante do Beija Flor). <br>
                                 Outro trecho que está liberado é na entrada próxima a ponte sobre o Rio Paquequer até
                                 uma
                                 escada que desce para a cachoeira Ceci-Peri.</p>
                         </div>
                     </div>
-                    <div>
+
+                    <div class="trilha">
                         <div class="trilhas-nome">
-                            <h2>Trilha Primavera</h2>
+                            <h2 id="Trilha Primavera" class="subtitulo">Trilha Primavera</h2>
                         </div>
+
+                        <div class="foto">
+                            <img src="img/trilha da primavera-150x191.jpg" />
+                        </div>
+
                         <div class="trilhas-lista">
                             <ul>
                                 <li>Nível de dificuldade: leve</li>
@@ -247,11 +413,16 @@
                                 indiscriminado.</p>
                         </div>
                     </div>
-                    <div>
-                        </div>
+
+                    <div class="trilha">
                         <div class="trilhas-nome">
-                            <h2>Trilha Mozart Catão</h2>
+                            <h2 id="Trilha Mozart Catão" class="subtitulo">Trilha Mozart Catão</h2>
                         </div>
+
+                        <div class="foto">
+                            <img src="img/trilha mozart catao-150x227.jpg" />
+                        </div>
+
                         <div class="trilhas-lista">
                             <ul>
                                 <li>Nível de dificuldade: leve a moderado</li>
@@ -265,9 +436,17 @@
                                 Estadual dos Três Picos, ao fundo. Os nomes da trilha e do mirante homenageiam dois
                                 alpinistas da cidade, mortos ao tentar escalar a face sul do Aconcágua, em 1998.</p>
                         </div>
+                    </div>
+
+                    <div class="trilha">
                         <div class="trilhas-nome">
-                            <h2>Trilha Cartão Postal</h2>
+                            <h2 id="Trilha Cartão Postal" class="subtitulo">Trilha Cartão Postal</h2>
                         </div>
+
+                        <div class="foto">
+                            <img src="img/trilha cartao postal-150x95.jpg" />
+                        </div>
+
                         <div class="trilhas-lista">
                             <ul>
                                 <li>Nível de dificuldade: moderado</li>
@@ -281,10 +460,18 @@
                                 cadeia de montanhas da Serra dos Órgãos, proporcionando ao visitante um novo ângulo
                                 de observação do Dedo de Deus do meio da floresta. No caminho é possível observar
                                 algumas grandes árvores, como o jequitibá.</p>
-                            </div>
-                        <div class="trilhas-nome">
-                            <h2>Trilha da Pedra do Sino</h2>
                         </div>
+                    </div>
+
+                    <div class="trilha">
+                        <div class="trilhas-nome">
+                            <h2 id="Trilha da Pedra do Sino" class="subtitulo">Trilha da Pedra do Sino</h2>
+                        </div>
+
+                        <div class="foto">
+                            <img src="img/trilha da pedra do sino-150x123.jpg" />
+                        </div>
+                        
                         <div class="trilhas-lista">
                             <ul>
                                 <li>Nível de dificuldade: moderado a pesado</li>
@@ -305,38 +492,42 @@
                                 parada. A trilha é acidentada e seu acesso é limitado a 100 pessoas por dia. A trilha é
                                 também o trecho final da tradicional travessia Petrópolis-Teresópolis.</p>
                         </div>
-                    <div class="mapa">
-                        <h2>Mapa de Trilhas</h2>
-                        <img src="img/trilhas-teresopolis.jpg" alt="Mapa das trilhas de Teresópolis"
-                            style="width:1139px;height:750px;" />
                     </div>
                 </div>
-            </div> 
+
+                <div class="mapa">
+                    <h2 class="subtitulo">Mapa de Trilhas</h2>
+                    <a href="img/trilhas-teresopolis.jpg" target="_blank"><img src="img/trilhas-teresopolis.jpg"
+                            class="img-responsive" alt="Mapa das trilhas de Teresópolis" /></a>
+                </div>
+            </div>
         </div>
+
         <div id="page-5" class="row conteudo" style="display: none;">
             <div class="col-md-12 como-chegar">
-                <div >
+                <div>
+                    <div class="titulo">
+                        <h1>Como Chegar</h1>
+                    </div>
                     <div class="como-chegar-endereco">
-                        <div class="titulo">
-                            <h1>Endereço :</h1>
-                        </div>
-    
-    
+                        <h3>Endereço</h3>
                         <p>Av. Rotariana , Teresópolis-RJ<br>
                             S/n. - Cep. 25960-602<br>
                             Teresópolis-RJ</p><br>
                     </div>
-    
-    
+
+
                     <div class="como-chegar-texto">
-                        <h2>Como chegar:</h2>
-                        <p>A entrada principal do Parque Nacional da Serra dos Órgãos fica na área urbana de Teresópolis, na
+                        <h2 class="subtitulo">Orientações</h2>
+                        <p>A entrada principal do Parque Nacional da Serra dos Órgãos fica na área urbana de
+                            Teresópolis, na
                             Avenida
-                            Rotariana s/nº (que interliga a BR 116 Rio-Bahia, na altura do km 89,5 à cidade), com acesso bem
+                            Rotariana s/nº (que interliga a BR 116 Rio-Bahia, na altura do km 89,5 à cidade), com acesso
+                            bem
                             sinalizado. A entrada do parque fica ao lado da ponte sobre o Rio Paquequer, na entrada da
                             cidade,
                             próximo ao Mirante do Soberbo e ao Portal da Cidade.</p><br>
-    
+
                         <p>Na BR 116, sentido Rio-Teresópolis, na altura de Magé, existe a praça do pedágio administrado
                             pela
                             CRT,
@@ -347,69 +538,85 @@
                     <div class="como-chegar-mapa">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29501.770679204164!2d-42.980919!3d-22.439512!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99b2fc4e7ae71d%3A0xa560f33c6b47710e!2sParque%20Nacional%20da%20Serra%20dos%20%C3%93rg%C3%A3os%20-%20PARNASO%20-%20Sede%20Teres%C3%B3polis!5e0!3m2!1spt-BR!2sbr!4v1598932106766!5m2!1spt-BR!2sbr"
-                            frameborder="0" style="border:0;" allowfullscreen=""
-                            aria-hidden="false" tabindex="0"></iframe>
+                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
                     </div>
                 </div>
             </div>
         </div>
         <div id="page-6" class="row conteudo" style="display: none;">
             <div class="col-md-12">
-                <div class="como-chegar-endereco" style="margin-top:25px;">
-                    <div class="titulo">
-                        <h1>Telefones :</h1>
-                    </div>
-
-
-                    <p>Adiminstração :  (21) 2152-1100<br>
-                        Bilheteria : (21) 2642-0579</p><br>
+                <div class="titulo">
+                    <h1>Contato</h1>
                 </div>
-                <div class="contato">    
+
+                <div class="contato-telefone" style="margin-top:25px;">
+                    <div class="telefones">
+                        <h3>Telefones</h3>
+                        <p>Adiminstração : (21) 2152-1100<br>
+                            Bilheteria : (21) 2642-0579</p><br>
+                    </div>
+                    <div class="redes-sociais">
+                        <h3>Redes Sociais</h3>
+                        <a href="https://www.facebook.com/icmbio.parnaso" target="_blank"><span
+                                class="fa fa-facebook-square"></span></a>
+                        <a href="https://www.instagram.com/parnaso_oficial/?igshid=1bcq6nyvre2as" target="_blank"><span
+                                class="fa fa-instagram"></span></a>
+                    </div>
+                </div>
+
+
+                <div class="contato">
                     <form>
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Seu Nome</label>
-                            <input type="name" class="form-control" id="exampleFormControlInput1" maxlength="50"  placeholder="Ex : Lucas Lopes">
+                            <input type="name" class="form-control" id="exampleFormControlInput1" maxlength="50"
+                                placeholder="Ex : Lucas Lopes">
                         </div>
 
                         <div class="form-group">
-                        <label for="exampleFormControlInput1">Endereço de email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" maxlength="50" placeholder="nome@exemplo.com">
+                            <label for="exampleFormControlInput1">Endereço de email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" maxlength="50"
+                                placeholder="nome@exemplo.com">
                         </div>
                         <div class="form-group">
-                        <label for="exampleFormControlInput1">Assunto</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" maxlength="50" placeholder="Ex : Buscando informações">
+                            <label for="exampleFormControlInput1">Assunto</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" maxlength="50"
+                                placeholder="Ex : Buscando informações">
                         </div>
                         <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Mensagem</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="255" placeholder="Escreva a sua mensagem até 255 characteres"></textarea>
+                            <label for="exampleFormControlTextarea1">Mensagem</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="255"
+                                placeholder="Escreva a sua mensagem até 255 characteres"></textarea>
                         </div>
                         <button type="submit" class="btn btn-outline-primary">Enviar</button>
-                    </form> 
-                  </div>
-            </div> 
-        </div>
-        <footer>
-        <div class="row footer-color">
-            <div class=" col-md-12 footer-div">
-                <a href="index.html"><img src="img/parnaso-logo.png" alt="Logo Parnaso" class="img-rounded img-responsive center-block"></a>
-            </div>
-        </div>
-        <div class="row footer-color">
-
-            <div class=" col-md-12">
-                <div class="footer-menu center-block">
-                    <ul class="nav nav-pills">
-                        <li><a href="https://www.ana.gov.br/"><img src="img/logo-ana.png"></a></li>
-                        <li><a href="https://www.gov.br/ibama"><img src="img/logo-ibama.png"></a></li>
-                        <li><a href="http://www.florestal.gov.br/"><img src="img/logo-sfb.png"></a></li>
-                        <li><a href="http://www.jbrj.gov.br/"><img src="img/logo-jbrj.jpg"></a></li>     
-                    </ul>
+                    </form>
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="row footer-color">
+                <div class=" col-md-2 footer-div">
+                    <a href="index.html"><img src="img/parnaso-logo.png" alt="Logo Parnaso"
+                            class="img-rounded img-responsive center-block"></a>
+                </div>
+                <div class="col-md-10">
+                    <div class="footer-menu center-block">
+                        <ul class="nav nav-pills">
+                            <li><a href="https://www.ana.gov.br/" target="_blank"><img src="img/logo-ana.png"></a></li>
+                            <li><a href="https://www.gov.br/ibama" target="_blank"><img src="img/logo-ibama.png"></a>
+                            </li>
+                            <li><a href="http://www.florestal.gov.br/" target="_blank"><img src="img/logo-sfb.png"></a>
+                            </li>
+                            <li><a href="http://www.jbrj.gov.br/" target="_blank"><img src="img/logo-jbrj.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
-       <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-       <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>

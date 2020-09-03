@@ -1,5 +1,7 @@
 body{background: #ececec;background-image: url("../img/Serra-dos-Orgaos-National-Park.jpg");background-repeat: no-repeat; background-size: cover;}
 hr{border:1px solid #ccc;}
+
+/*Header*/
 .topo-img img{ max-height: 60px; margin-top: 12px;}
 
 .topo {border-bottom:2px solid green;background: #fff;}
@@ -9,12 +11,21 @@ hr{border:1px solid #ccc;}
 @media only screen and (max-width: 600px) {
     .topo-menu ul li a{cursor:pointer; border-radius: 0; border-bottom: 2px solid transparent; text-transform: uppercase; font-size:12px; padding:10px 8px;}
 }
-.topo-menu ul li a:hover{background-color: #fafafa; border-bottom: 2px solid greenyellow;}
+.topo-menu ul li a:hover{background-color: #fafafa; border-bottom: 2px solid yellowgreen;}
 
-.conteudo{min-height: 330px; background: #ffffffd8;}
+/*Conteúdo*/
+.titulo {background-color: green;color: #fff;text-align: center;border-radius: 30px;}
+.subtitulo {text-align: center; text-decoration: underline;}
+.conteudo{min-height: 500px; background: #ffffffd8;}
+.trilha {margin-top:10px;border: 1px solid black; border-radius: 10px;padding: 40px;}
+
+/* Carrossel */
+.carousel {width: 100%; max-height:600px; overflow: hidden;}
+.item img {width: 100%;}
+
+.botao{width:300px;  margin:10px auto; position:relative; display: block;background-color: #029757;}
 
 /*Como Chegar*/
-.como-chegar { padding-top:20px; }
 .como-chegar-endereco {text-align: left;border-left: 5px solid green;padding: 5px ;border-radius: 10px;}
 .como-chegar-texto {margin: 30px;}
 .como-chegar-mapa {text-align: center; padding: 30px; }
@@ -26,32 +37,42 @@ hr{border:1px solid #ccc;}
 .atrativos-texto {margin: 30px;}
 .atrativos-texto p{text-indent: 15px;}
 
-/* Carrocel */
-.carousel {width: 100%; max-height:450px; overflow: hidden;}
-.item img {width: 100%;}
 
 
 .botao{width:300px;  margin:10px auto; position:relative; display: block;background-color: #029757;}
 
 /*Trilhas*/
-.trilhas{padding-top:20px;}
-.trilhas-nome {margin: 10px;}
-.trilhas-lista {margin: 60px;}
-.trilhas-texto {margin: 45px;}
+.trilhas-nome {margin: 60px;}
+.trilhas-lista ul{margin-left: 60px;padding:40px;list-style-type: none;}
+/* .trilhas-lista ul li {margin-left: 30px} */
+.trilhas-descricao {margin: 50px}
 .mapa {text-align: center; padding-top: 20px;}
 .trilhas-titulo {text-align: center;}
+.foto {
+    float: left;
+    padding: 10px;
+    /* margin-left: 20px;
+    margin-right: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px; */
+}
+#mapa-de-trilhas {margin: 40px}
 
-.contato{padding:20px 0;}
+/*contato*/
+.contato-telefone {text-align: left;}
+.telefones {border-left: 5px solid green;padding: 5px ;border-radius: 10px;float: left;}
+.redes-sociais {font-size: 35px;text-align:center;float: right;}
+.contato{padding:20px 0; clear: both;}
 
 /*Footer*/
-.footer-color{background:#fafafa;}
-.footer-div{border-top: 2px solid green;}
+.footer-color{background:#fafafa; border-top: 2px solid green;}
 .footer-div img{max-width:150px; margin-top:30px; }
 
-.footer-menu {width:600px; margin: 0 auto;}
+.footer-menu {width:auto; float:right}
+.footer-menu ul{display:block; margin-right: 0;}
 .footer-menu ul li{list-style-type: none;}
 .footer-menu ul li a{list-style-type: none; height: 100px;}
-.footer-menu img{ width: 50px; margin: 20px 32px;}
+.footer-menu img{ width: 50px; margin: 20px 15px; display:block;}
 
 @media only screen and (max-width: 600px) {
     .footer-menu {width:auto; margin: 0 12%;}
